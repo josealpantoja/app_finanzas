@@ -1,5 +1,6 @@
 import time
 
+
 def imprime_hora_local():
     hora_local = time.localtime()  # Obtiene la estructura de tiempo para la hora local
     

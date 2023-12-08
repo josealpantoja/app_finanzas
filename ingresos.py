@@ -1,5 +1,6 @@
 import tipos_de_numeros
 import fecha_input
+import write_csv
 
 def ingresa(): #con esta función vamos a ingresar los ingresos realizados.
     seleccion = tipos_de_numeros.escribe_entero('Ingresa el tipo de ingreso que has realizado, teclea un número: 1 - Sueldo | 2 - Freelance | 3 - Pago prestamo | 4 - Inversiones | 5 - Renta ')
@@ -34,6 +35,8 @@ def ingresa(): #con esta función vamos a ingresar los ingresos realizados.
     print('')
     print('* ' * 20, '✅', ' *' * 20)
     print('')
+
+    write_csv.agregar_ingreso(fecha, ingreso, tipo, comment)
 
     return ingreso, tipo, comment, fecha, ano, mes, dia
 
