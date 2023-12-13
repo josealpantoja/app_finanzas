@@ -1,4 +1,4 @@
-import ingresos, gastos, tipos_de_numeros
+import ingresos, gastos, tipos_de_numeros, balance
 
 def menu():
     while True:
@@ -11,7 +11,7 @@ def menu():
             elif seleccion == 2:
                 gastos.ingresa()
             elif seleccion == 3:
-                print('hola, aun no tenemos el balance, estamos trabajando, una disculpita')
+                balance.balance()
             elif seleccion == 4:
                 break  # Salir del bucle
             else:
